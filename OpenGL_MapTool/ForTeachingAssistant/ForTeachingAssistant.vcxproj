@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2ABCE658-88C5-41B8-A762-E48B025E5618}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ForTeachingAssistant</RootNamespace>
+    <ProjectName>Maptool</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\output\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IntDir>$(SolutionDir)\bin\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\output\</OutDir>
+    <IntDir>$(SolutionDir)\bin\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ButtonUI.cpp" />
+    <ClCompile Include="ConsoleSystem.cpp" />
+    <ClCompile Include="DrawSystem.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ObjectFireworkEffect.cpp" />
+    <ClCompile Include="ObjectOutLineCube.cpp" />
+    <ClCompile Include="ObjectSkier.cpp" />
+    <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="ObjectSnowEffect.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneCurveLine.cpp" />
+    <ClCompile Include="SceneFireworkTest.cpp" />
+    <ClCompile Include="SceneLineTest.cpp" />
+    <ClCompile Include="SceneMainMenu.cpp" />
+    <ClCompile Include="SceneMultiCurveLine.cpp" />
+    <ClCompile Include="SceneCurveTest.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SceneSkiingBonusStage.cpp" />
+    <ClCompile Include="SceneSkiingMainStage.cpp" />
+    <ClCompile Include="SceneSkiingTestStage.cpp" />
+    <ClCompile Include="SceneCollisionTest.cpp" />
+    <ClCompile Include="UtillFunc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MathUtill.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ButtonUI.h" />
+    <ClInclude Include="ConsoleSystem.h" />
+    <ClInclude Include="DrawSystem.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectFireworkEffect.h" />
+    <ClInclude Include="ObjectOutLineCube.h" />
+    <ClInclude Include="ObjectSkier.h" />
+    <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="ObjectSnowEffect.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneCollisionTest.h" />
+    <ClInclude Include="SceneCurveLine.h" />
+    <ClInclude Include="SceneFireworkTest.h" />
+    <ClInclude Include="SceneLineTest.h" />
+    <ClInclude Include="SceneMainMenu.h" />
+    <ClInclude Include="SceneMultiCurveLine.h" />
+    <ClInclude Include="SceneCurveTest.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SceneSkiingBonusStage.h" />
+    <ClInclude Include="SceneSkiingMainStage.h" />
+    <ClInclude Include="SceneSkiingTestStage.h" />
+    <ClInclude Include="UtillFunc.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="MathUtill.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ForTeachingAssistant.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

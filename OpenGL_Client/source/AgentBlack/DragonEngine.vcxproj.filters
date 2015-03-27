@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="SceneMultiCurveLine.cpp" />
+    <ClCompile Include="SceneSkiingBonusStage.cpp" />
+    <ClCompile Include="SceneSkiingMainStage.cpp" />
+    <ClCompile Include="SceneSkiingTestStage.cpp" />
+    <ClCompile Include="UtillFunc.cpp" />
+    <ClCompile Include="ButtonUI.cpp" />
+    <ClCompile Include="ConsoleSystem.cpp" />
+    <ClCompile Include="DrawSystem.cpp" />
+    <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MathUtill.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ObjectFireworkEffect.cpp" />
+    <ClCompile Include="ObjectOutLineCube.cpp" />
+    <ClCompile Include="ObjectSkier.cpp" />
+    <ClCompile Include="ObjectSnowEffect.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneCollisionTest.cpp" />
+    <ClCompile Include="SceneCurveLine.cpp" />
+    <ClCompile Include="SceneCurveTest.cpp" />
+    <ClCompile Include="SceneFireworkTest.cpp" />
+    <ClCompile Include="SceneLineTest.cpp" />
+    <ClCompile Include="SceneMainMenu.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SceneMultiCurveLine.h" />
+    <ClInclude Include="SceneSkiingBonusStage.h" />
+    <ClInclude Include="SceneSkiingMainStage.h" />
+    <ClInclude Include="SceneSkiingTestStage.h" />
+    <ClInclude Include="UtillFunc.h" />
+    <ClInclude Include="ButtonUI.h" />
+    <ClInclude Include="ConsoleSystem.h" />
+    <ClInclude Include="DrawSystem.h" />
+    <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="MathUtill.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectFireworkEffect.h" />
+    <ClInclude Include="ObjectOutLineCube.h" />
+    <ClInclude Include="ObjectSkier.h" />
+    <ClInclude Include="ObjectSnowEffect.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneCollisionTest.h" />
+    <ClInclude Include="SceneCurveLine.h" />
+    <ClInclude Include="SceneCurveTest.h" />
+    <ClInclude Include="SceneFireworkTest.h" />
+    <ClInclude Include="SceneLineTest.h" />
+    <ClInclude Include="SceneMainMenu.h" />
+    <ClInclude Include="SceneManager.h" />
+  </ItemGroup>
+</Project>
